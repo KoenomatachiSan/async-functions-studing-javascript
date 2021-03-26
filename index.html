@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Título da página</title>
+</head>
+<body>
+  <script>
+  // OBS -> Async functions dont return promise
+    
+   async function writeHelloWorld(){
+   await console.log("Hello World");
+  }
+  writeHelloWorld();// return "hello world"
+  
+  async function writeMyText(text){
+    await console.log(text);
+  }
+    
+  writeMyText("It is my text"); // return "It is my text
+  
+  async function some(x,y){
+   await  console.log(x+y);
+  }
+    
+  some(1,1); // Return 2
+    
+  </script>
+Conteúdo da página
+</body>
+</html>
